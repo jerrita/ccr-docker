@@ -1,0 +1,9 @@
+services:
+  ccr:
+    image: ghcr.io/jerrita/ccr-docker:latest
+    container_name: ccr
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./config:/root/.claude-code-router
+
