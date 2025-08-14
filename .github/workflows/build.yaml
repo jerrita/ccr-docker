@@ -103,9 +103,3 @@ jobs:
           --tag ${IMAGE_BASE}:latest \
           --append ${IMAGE_BASE}:latest-amd64 \
           --append ${IMAGE_BASE}:latest-arm64
-
-        # Also create the master tag
-        docker buildx imagetools create \
-          --tag ${IMAGE_BASE}:master \
-          --append ${IMAGE_BASE}:master-amd64 \
-          --append ${IMAGE_BASE}:master-arm64
